@@ -588,7 +588,7 @@ img {
 }
 
 
-.card::before {
+.card:before {
     content: "";
     position: absolute;
     top: 0;
@@ -602,7 +602,7 @@ img {
     opacity: 0;
 }
 
-.card:hover::before {
+.card:hover:before {
     opacity: 1;
 }
 

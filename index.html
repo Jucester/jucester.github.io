@@ -1,11 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p> Hello world </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link
+            href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <title> Jucester </title>
+
+    </head>
+    <body>
+
+        <!-- Header -->
+
+        <header class="header">
+            <nav class="nav grid">
+                <div class="logo">
+                    <a herf="#" class="logo"> Jucester.tech </a>
+                </div>
+                <div class="menu" id="menu">
+                    <ul class="list">
+                        <li class="nav_item"><a href="#home" class="link
+                                active">
+                                Home </a></li>
+                        <li class="nav_item"><a href="#about" class="link">
+                                About
+                            </a></li>
+                        <li class="nav_item"><a href="#skills" class="link">
+                                Skills </a></li>
+                        <li class="nav_item"><a href="#portfolio" class="link">
+                                Portfolio
+                            </a></li>
+
+                        <li class="nav_item"><a href="#contact" class="link">
+                                Contact
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="nav_toggle" id="toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- Home -->
+            <section class="home grid" id="home">
+                <div class="home_data">
+                    <h1 class="home_title"> Hi, <br> I'm
+                        <span class="home_title_color"> Jucester </span>
+                        <br>
+                        Web Developer
+                    </h1>
+                    <a href="#" class="button"> Contact </a>
+                </div>
+
+                <div class="home_social">
+                    <a href="#" class="home_social_icon"><box-icon type='logo'
+                            name='github'></box-icon> </a>
+                    <a href="#" class="home_social_icon"><box-icon
+                            name='twitter'
+                            type='logo'></box-icon></a>
+                    <a href="#" class="home_social_icon"><box-icon
+                            name='facebook-square' type='logo'></box-icon> </a>
+                    <a href="#" class="home_social_icon"><box-icon
+                            name='instagram' type='logo'></box-icon></a>
+                </div>
+
+                <div class="home_image">
+                    <img src="/public/images/N.png" alt="">
+                </div>
+
+            </section>
+
+            <!-- About -->
+
+            <section class="about section" id="about">
+
+                <h2 class="section-title"> About </h2>
+
+                <div class="about_container grid">
+                    <div class="about_img">
+                        <img src="/public/images/N.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="about_sub">
+                            I'm Jucester
+                        </h2>
+
+                        <p class="about_text"> Hi, glad to see you here. I'm
+                            Jucester, a full-stack developer, from Venezuela
+                            that love every thing about computer science. I'm
+                            passionate about web technologies and have almost
+                            two years of experience developing websites and
+                            apps.
+                        </p>
+                        <br />
+                        <p class="about_text">
+                            I work daily to improve my skills, with books and
+                            courses. I dream about work with a innovate
+                            technology, so I'm studying to become a Data
+                            Scientist, and who knows, maybe in the future a AI
+                            Engineer. (To prevent the destruction of humanity by
+                            the hands of an almighty AI)
+                        </p>
+                        <br />
+                        <p class="about_text">
+                            I'm also very interested in blockchain and
+                            cryptocurrencies, and learning about the tech part
+                            of these topics.
+                            Literature is one of my loves and I'm a (not very
+                            good) writer and have a blog were you can read my
+                            tales if you feel interested.
+                            I'm a hardware enthusiast in love with AMD Ryzen.
+                            As you can thought, I'm a gamer, not hardcore
+                            because time, but that doesn't stop me
+                        </p>
+                        <br />
+                        <p class="about_text">
+                            When I see someone who needs help, I try to help. I
+                            don't mind with sharing my knowledge despite it's
+                            not much. I'm convinced that we can learn better if
+                            we teach what we know.
+                        </p>
+
+                        <br />
+                        <h2 class="about_sub"> Experience: </h2>
+                        <p class="about_text">
+
+                            Worked as System Analyst. My job was develop,
+                            maintain and customizing the ERP Software System of
+                            the company, adding new features or making
+                            personalized reports based on the data from
+                            database. Also develop apps to help employeers with
+                            his tasks (like a payroll software and Macros for
+                            Excel)
+
+                            Worked with: VBA, Visual FoxPro, SQL Server, C#.
+                        </p>
+
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Skills -->
+
+            <section class="skills section" id="skills">
+                <h2 class="section-title"> Skills </h2>
+
+                <div class="skills_container grid">
+                    <div>
+                        <h2 class="skills_sub"> Web Dev: </h2>
+                        <p class="skills_text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Reprehenderit facere accusantium mollitia quia
+                            sint dolorum voluptas quasi magnam porro tenetur
+                            magni odit, omnis illo maxime adipisci officiis
+                            assumenda minus possimus!
+                        </p>
+
+                        <ul>
+                            <li class="html">
+                                <box-icon type='logo' name='html5'></box-icon>
+                                <span class="skills_name">HTML5</span>
+                            </li>
+                            <li class="css">
+                                <box-icon name='css3' type='logo'></box-icon>
+                                <span class="skills_name">CSS</span>
+                            </li>
+                            <li class="js">
+                                <box-icon name='javascript' type='logo'></box-icon>
+                                <span class="skills_name">Javascript</span>
+                            </li>
+                            <li class="node">
+                                <box-icon name='nodejs' type='logo'></box-icon>
+                                <span class="skills_name">Nodejs</span>
+                            </li>
+                            <li class="react">
+                                <box-icon name='react' type='logo'></box-icon>
+                                <span class="skills_name">React</span>
+                            </li>
+                            <li class="angular">
+                                <box-icon name='angular' type='logo'></box-icon>
+                                <span class="skills_name">Angular</span>
+                            </li>
+
+                            <li class="sql">
+                                <box-icon name='data'></box-icon>
+                                <span class="skills_name">SQL</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="public/images/work1.jpg" alt=""
+                            class="skills__img">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Portfolio -->
+
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Work</h2>
+
+                <div class="portfolio_container grid">
+                    <div class="work_img">
+                        <img src="public/images/work1.jpg" alt="">
+                    </div>
+                    <div class="work_img">
+                        <img src="public/images/work2.jpg" alt="">
+                    </div>
+                    <div class="work_img">
+                        <img src="public/images/work3.jpg" alt="">
+                    </div>
+                    <div class="work_img">
+                        <img src="public/images/work4.jpg" alt="">
+                    </div>
+                    <div class="work_img">
+                        <img src="public/images/work5.jpg" alt="">
+                    </div>
+                    <div class="work_img">
+                        <img src="public/images/work6.jpg" alt="">
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Contact -->
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title"> Contact me </h2>
+
+                <div class="contact_container grid">
+                    <form action="action_page.php">
+
+                        <label for="fname" class="label">First Name</label>
+                        <input type="text" id="fname" name="firstname"
+                            placeholder="Your name.." class="contact_input">
+                        <label for="lname" class="label">Last Name</label>
+                        <input type="text" id="lname" name="lastname"
+                            placeholder="Your last name.."
+                            class="contact_input">
+
+                        <label for="lname" class="label">Email: </label>
+                        <input type="text" id="email" name="email"
+                            placeholder="Your email here.."
+                            class="contact_input" required>
+
+                        <label for="subject" class="label">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write
+                            something.." style="height:200px"
+                            class="contact_input" required></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+
+            <footer class="footer">
+                <div class="footer_first">
+                    <p class="footer_title"> Jucester.tech | &#169; 2020 copyright all right reserved </p>
+                    <div class="footer_social">
+                        <a href="#" class="footer_icon"><i class='bx
+                                bxl-facebook'></i></a>
+                        <a href="#" class="footer_icon"><i class='bx
+                                bxl-instagram'></i></a>
+                        <a href="#" class="footer_icon"><i class='bx
+                                bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+
+        </main>
+
+
+
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <!-- Scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- My js -->
+        <script src="src/js/main.js"></script>
+        
+    </body>
 </html>

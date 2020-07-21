@@ -40,6 +40,7 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home_title',{}); 
+sr.reveal('.home_message',{}); 
 sr.reveal('.button',{delay: 200}); 
 sr.reveal('.home_image',{delay: 400}); 
 sr.reveal('.home_social_icon',{ interval: 200}); 
@@ -56,13 +57,15 @@ sr.reveal('.skills_data',{interval: 200});
 sr.reveal('.skills_img',{delay: 600});
 
 /*SCROLL WORK*/
-sr.reveal('.work_img',{interval: 200}); 
+sr.reveal('.card',{interval: 200}); 
 
 /*SCROLL CONTACT*/
 sr.reveal('.label',{interval: 200}); 
 sr.reveal('.contact_input',{interval: 200}); 
 
-/*Tab */
+/* SCROLL SERVICES */
+
+sr.reveal('.service-box',{});
 
 
 

@@ -9,8 +9,9 @@
             rel='stylesheet'>
         <link rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-
-            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet">
 
         <title> Jucester </title>
 
@@ -29,6 +30,9 @@
                         <li class="nav_item"><a href="#home" class="link
                                 active">
                                 Home </a></li>
+                        <li class="nav_item"><a href="#services" class="link">
+                               Services
+                            </a></li>
                         <li class="nav_item"><a href="#about" class="link">
                                 About
                             </a></li>
@@ -52,12 +56,19 @@
         <main class="main">
             <!-- Home -->
             <section class="home grid" id="home">
+                <div class="home_image">
+                    <img src="/public/images/N.png" alt="">
+                </div>
                 <div class="home_data">
                     <h1 class="home_title"> Hi, <br> I'm
                         <span class="home_title_color"> Jucester </span>
                         <br>
-                        Web Developer
+                        Web developer <br>
                     </h1>
+                    <p class="home_message">
+                        Trying to save the world by programming cool stuff <br />
+                        <strike> and not make it worse with bugs </strike>
+                    </p>
                     <a href="#" class="button"> Contact </a>
                 </div>
 
@@ -73,9 +84,57 @@
                             name='instagram' type='logo'></box-icon></a>
                 </div>
 
-                <div class="home_image">
-                    <img src="/public/images/N.png" alt="">
+
+            </section>
+
+
+            <section class="services section" id="services">
+                <h1 class="section-title "> My services </h1>
+
+                <div class="services-section grid">
+
+                    <div class="services-container">
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="service-title">Web Development</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="service-title"> E-Commerce </div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="service-title"> Applications </div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
 
             </section>
 
@@ -110,42 +169,6 @@
                             Engineer. (To prevent the destruction of humanity by
                             the hands of an almighty AI)
                         </p>
-                        <br />
-                        <p class="about_text">
-                            I'm also very interested in blockchain and
-                            cryptocurrencies, and learning about the tech part
-                            of these topics.
-                            Literature is one of my loves and I'm a (not very
-                            good) writer and have a blog were you can read my
-                            tales if you feel interested.
-                            I'm a hardware enthusiast in love with AMD Ryzen.
-                            As you can thought, I'm a gamer, not hardcore
-                            because time, but that doesn't stop me
-                        </p>
-                        <br />
-                        <p class="about_text">
-                            When I see someone who needs help, I try to help. I
-                            don't mind with sharing my knowledge despite it's
-                            not much. I'm convinced that we can learn better if
-                            we teach what we know.
-                        </p>
-
-                        <br />
-                        <h2 class="about_sub"> Experience: </h2>
-                        <p class="about_text">
-
-                            Worked as System Analyst. My job was develop,
-                            maintain and customizing the ERP Software System of
-                            the company, adding new features or making
-                            personalized reports based on the data from
-                            database. Also develop apps to help employeers with
-                            his tasks (like a payroll software and Macros for
-                            Excel)
-
-                            Worked with: VBA, Visual FoxPro, SQL Server, C#.
-                        </p>
-
-
 
                     </div>
                 </div>
@@ -213,28 +236,84 @@
             <!-- Portfolio -->
 
             <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">Projects</h2>
+
+                <p class="portfolio_text"> "Practice makes the master", So here
+                    are some personal projects to show you what I can do </p>
 
                 <div class="portfolio_container grid">
-                    <div class="work_img">
+                    <div class="card">
                         <img src="public/images/work1.jpg" alt="">
+                        <div class="info">
+                            <h1> Simple app </h1>
+                            <P> Simple app </P>
+                            <a href="#" class="link"> Link </a>
+                            <br>
+                            <a href="#" class="link"> Code </a>
+                        </div>
                     </div>
-                    <div class="work_img">
+
+
+                    <div class="card">
+
                         <img src="public/images/work2.jpg" alt="">
+                        <div class="info">
+                            <h1> Simple app </h1>
+                            <P> Simple app </P>
+                            <a href="#" class="link"> Link </a>
+                            <br>
+                            <a href="#" class="link"> Code </a>
+                        </div>
                     </div>
-                    <div class="work_img">
+                    <div class="card">
                         <img src="public/images/work3.jpg" alt="">
+                        <div class="info">
+                            <h1> Simple app </h1>
+                            <P> Simple app </P>
+                            <a href="#" class="link"> Link </a>
+                            <br>
+                            <a href="#" class="link"> Code </a>
+                        </div>
                     </div>
-                    <div class="work_img">
+                    <div class="card">
                         <img src="public/images/work4.jpg" alt="">
+                        <div class="info">
+                            <h1> Simple app </h1>
+                            <P> Simple app </P>
+                            <a href="#" class="link"> Link </a>
+                            <br>
+                            <a href="#" class="link"> Code </a>
+                        </div>
                     </div>
-                    <div class="work_img">
+                    <div class="card">
                         <img src="public/images/work5.jpg" alt="">
+                        <div class="info">
+                            <h1> Simple app </h1>
+                            <P> Simple app </P>
+                            <a href="#" class="link"> Link </a>
+                            <br>
+                            <a href="#" class="link"> Code </a>
+                        </div>
                     </div>
-                    <div class="work_img">
+                    <div class="card">
                         <img src="public/images/work6.jpg" alt="">
+                        <div class="info">
+                            <h1> Simple app </h1>
+                            <P> Simple app </P>
+                            <a href="#" class="link"> Link </a>
+                            <br>
+                            <a href="#" class="link"> Code </a>
+                        </div>
                     </div>
+
+                    
                 </div>
+
+               
+                <div class="see_btn">
+                    <a href="#" class="button"> See more </a>
+                </div>
+                
 
             </section>
 
@@ -275,7 +354,8 @@
 
             <footer class="footer">
                 <div class="footer_first">
-                    <p class="footer_title"> Jucester.tech | &#169; 2020 copyright all right reserved </p>
+                    <p class="footer_title"> Jucester.tech | &#169; 2020
+                        copyright all right reserved </p>
                     <div class="footer_social">
                         <a href="#" class="footer_icon"><i class='bx
                                 bxl-facebook'></i></a>
@@ -300,6 +380,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
         <!-- My js -->
         <script src="src/js/main.js"></script>
-        
+
     </body>
 </html>

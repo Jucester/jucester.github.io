@@ -799,8 +799,12 @@ input[type=submit]:hover {
     }
 
     .home_image {
-        width: 457px;
+        width: 257px;
         bottom: 15%;
+    }
+
+    .home_message {
+        font-size: 12px;
     }
 
     .about_container,

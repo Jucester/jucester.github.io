@@ -1,385 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="src/css/style.css">
-        <link
-            href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'
-            rel='stylesheet'>
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Backend Dev</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <a href="#skills" class="hover:text-blue-400">Skills</a>
+                <a href="#projects" class="hover:text-blue-400">Projects</a>
+                <a href="#experience" class="hover:text-blue-400">Experience</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+                <a href="#" class="hover:text-blue-400" onclick="return false;">Blog</a>
+            </div>
+        </div>
+    </nav>
 
-        <title> Jucester </title>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80" 
+                 alt="Background Code" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/90"></div>
+        </div>
 
-    </head>
-    <body>
-
-        <!-- Header -->
-
-        <header class="header">
-            <nav class="nav grid">
-                <div class="logo">
-                    <a herf="#" class="logo"> Jucester.tech </a>
-                </div>
-                <div class="menu" id="menu">
-                    <ul class="list">
-                        <li class="nav_item"><a href="#home" class="link
-                                active">
-                                Home </a></li>
-                        <li class="nav_item"><a href="#services" class="link">
-                               Services
-                            </a></li>
-                        <li class="nav_item"><a href="#about" class="link">
-                                About
-                            </a></li>
-                        <li class="nav_item"><a href="#skills" class="link">
-                                Skills </a></li>
-                        <li class="nav_item"><a href="#portfolio" class="link">
-                                Portfolio
-                            </a></li>
-
-                        <li class="nav_item"><a href="#contact" class="link">
-                                Contact
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="nav_toggle" id="toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <!-- Home -->
-            <section class="home grid" id="home">
-                <div class="home_image">
-                    <img src="public/images/N.png" alt="">
-                </div>
-                <div class="home_data">
-                    <h1 class="home_title"> Hi, <br> I'm
-                        <span class="home_title_color"> Jucester </span>
-                        <br>
-                        Web developer <br>
-                    </h1>
-                    <p class="home_message">
-                        Trying to save the world by programming cool stuff <br />
-                        <strike> and not make it worse with bugs </strike>
-                    </p>
-                    <a href="#" class="button"> Contact </a>
-                </div>
-
-                <div class="home_social">
-                    <a href="#" class="home_social_icon"><box-icon type='logo'
-                            name='github'></box-icon> </a>
-                    <a href="#" class="home_social_icon"><box-icon
-                            name='twitter'
-                            type='logo'></box-icon></a>
-                    <a href="#" class="home_social_icon"><box-icon
-                            name='facebook-square' type='logo'></box-icon> </a>
-                    <a href="#" class="home_social_icon"><box-icon
-                            name='instagram' type='logo'></box-icon></a>
-                </div>
-
-
-            </section>
-
-
-            <section class="services section" id="services">
-                <h1 class="section-title "> My services </h1>
-
-                <div class="services-section grid">
-
-                    <div class="services-container">
-
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="service-title">Web Development</div>
-                            <div class="service-desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Et eaque ratione rem porro,
-                                nihil.
-                            </div>
-                        </div>
-
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <i class="fas fa-shopping-bag"></i>
-                            </div>
-                            <div class="service-title"> E-Commerce </div>
-                            <div class="service-desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Et eaque ratione rem porro,
-                                nihil.
-                            </div>
-                        </div>
-
-
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="service-title"> Applications </div>
-                            <div class="service-desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Et eaque ratione rem porro,
-                                nihil.
-                            </div>
-                        </div>
-
+        <!-- Content -->
+        <div class="container mx-auto px-4 z-10 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-8 inline-block">
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-blue-500 rounded-lg blur opacity-25"></div>
+                        <span class="relative inline-block px-4 py-1 text-sm text-blue-400 bg-blue-900/50 rounded-full mb-4 font-mono">
+                            { backend: true }
+                        </span>
                     </div>
-                </div>
-
-
-            </section>
-
-            <!-- About -->
-
-            <section class="about section" id="about">
-
-                <h2 class="section-title"> About </h2>
-
-                <div class="about_container grid">
-                    <div class="about_img">
-                        <img src="public/images/N.png" alt="">
-                    </div>
-                    <div>
-                        <h2 class="about_sub">
-                            I'm Jucester
-                        </h2>
-
-                        <p class="about_text"> Hi, glad to see you here. I'm
-                            Jucester, a full-stack developer, from Venezuela
-                            that love every thing about computer science. I'm
-                            passionate about web technologies and have almost
-                            two years of experience developing websites and
-                            apps.
-                        </p>
-                        <br />
-                        <p class="about_text">
-                            I work daily to improve my skills, with books and
-                            courses. I dream about work with a innovate
-                            technology, so I'm studying to become a Data
-                            Scientist, and who knows, maybe in the future a AI
-                            Engineer. (To prevent the destruction of humanity by
-                            the hands of an almighty AI)
-                        </p>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- Skills -->
-
-            <section class="skills section" id="skills">
-                <h2 class="section-title"> Skills </h2>
-
-                <div class="skills_container grid">
-                    <div>
-                        <h2 class="skills_sub"> Web Dev: </h2>
-                        <p class="skills_text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Reprehenderit facere accusantium mollitia quia
-                            sint dolorum voluptas quasi magnam porro tenetur
-                            magni odit, omnis illo maxime adipisci officiis
-                            assumenda minus possimus!
-                        </p>
-
-                        <ul>
-                            <li class="html">
-                                <box-icon type='logo' name='html5'></box-icon>
-                                <span class="skills_name">HTML5</span>
-                            </li>
-                            <li class="css">
-                                <box-icon name='css3' type='logo'></box-icon>
-                                <span class="skills_name">CSS</span>
-                            </li>
-                            <li class="js">
-                                <box-icon name='javascript' type='logo'></box-icon>
-                                <span class="skills_name">Javascript</span>
-                            </li>
-                            <li class="node">
-                                <box-icon name='nodejs' type='logo'></box-icon>
-                                <span class="skills_name">Nodejs</span>
-                            </li>
-                            <li class="react">
-                                <box-icon name='react' type='logo'></box-icon>
-                                <span class="skills_name">React</span>
-                            </li>
-                            <li class="angular">
-                                <box-icon name='angular' type='logo'></box-icon>
-                                <span class="skills_name">Angular</span>
-                            </li>
-
-                            <li class="sql">
-                                <box-icon name='data'></box-icon>
-                                <span class="skills_name">SQL</span>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="public/images/work1.jpg" alt=""
-                            class="skills__img">
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- Portfolio -->
-
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Projects</h2>
-
-                <p class="portfolio_text"> "Practice makes the master", So here
-                    are some personal projects to show you what I can do </p>
-
-                <div class="portfolio_container grid">
-                    <div class="card">
-                        <img src="public/images/work1.jpg" alt="">
-                        <div class="info">
-                            <h1> Simple app </h1>
-                            <P> Simple app </P>
-                            <a href="#" class="link"> Link </a>
-                            <br>
-                            <a href="#" class="link"> Code </a>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-
-                        <img src="public/images/work2.jpg" alt="">
-                        <div class="info">
-                            <h1> Simple app </h1>
-                            <P> Simple app </P>
-                            <a href="#" class="link"> Link </a>
-                            <br>
-                            <a href="#" class="link"> Code </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="public/images/work3.jpg" alt="">
-                        <div class="info">
-                            <h1> Simple app </h1>
-                            <P> Simple app </P>
-                            <a href="#" class="link"> Link </a>
-                            <br>
-                            <a href="#" class="link"> Code </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="public/images/work4.jpg" alt="">
-                        <div class="info">
-                            <h1> Simple app </h1>
-                            <P> Simple app </P>
-                            <a href="#" class="link"> Link </a>
-                            <br>
-                            <a href="#" class="link"> Code </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="public/images/work5.jpg" alt="">
-                        <div class="info">
-                            <h1> Simple app </h1>
-                            <P> Simple app </P>
-                            <a href="#" class="link"> Link </a>
-                            <br>
-                            <a href="#" class="link"> Code </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="public/images/work6.jpg" alt="">
-                        <div class="info">
-                            <h1> Simple app </h1>
-                            <P> Simple app </P>
-                            <a href="#" class="link"> Link </a>
-                            <br>
-                            <a href="#" class="link"> Code </a>
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-               
-                <div class="see_btn">
-                    <a href="#" class="button"> See more </a>
                 </div>
                 
-
-            </section>
-
-            <!-- Contact -->
-
-            <section class="contact section" id="contact">
-                <h2 class="section-title"> Contact me </h2>
-
-                <div class="contact_container grid">
-                    <form action="action_page.php">
-
-                        <label for="fname" class="label">First Name</label>
-                        <input type="text" id="fname" name="firstname"
-                            placeholder="Your name.." class="contact_input">
-                        <label for="lname" class="label">Last Name</label>
-                        <input type="text" id="lname" name="lastname"
-                            placeholder="Your last name.."
-                            class="contact_input">
-
-                        <label for="lname" class="label">Email: </label>
-                        <input type="text" id="email" name="email"
-                            placeholder="Your email here.."
-                            class="contact_input" required>
-
-                        <label for="subject" class="label">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write
-                            something.." style="height:200px"
-                            class="contact_input" required></textarea>
-
-                        <input type="submit" value="Submit">
-
-                    </form>
-
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white leading-tight">
+                    Transformando Ideas en <br/>
+                    <span class="text-blue-400">Arquitecturas Escalables</span>
+                </h1>
+                
+                <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                    Especializado en construir soluciones backend robustas y eficientes 
+                    que impulsan aplicaciones de alto rendimiento
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" 
+                       class="px-8 py-4 bg-blue-600 text-white rounded-lg transform transition-all hover:scale-105 hover:bg-blue-700 shadow-lg hover:shadow-blue-500/50 w-full sm:w-auto">
+                        <span class="flex items-center justify-center">
+                            <span>Contáctame</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </span>
+                    </a>
+                    <a href="#projects" 
+                       class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg transform transition-all hover:scale-105 hover:bg-white hover:text-gray-900 w-full sm:w-auto">
+                        <span class="flex items-center justify-center">
+                            <span>Ver Proyectos</span>
+                            <span class="ml-2 font-mono">{...}</span>
+                        </span>
+                    </a>
                 </div>
-            </section>
 
-            <!-- Footer -->
+                <!-- Tech Stack Pills -->
+                <div class="mt-16 flex flex-wrap justify-center gap-4">
+                    <span class="px-4 py-2 bg-gray-800/50 rounded-full text-sm text-gray-300 backdrop-blur-sm">
+                        <i class="fab fa-python mr-2"></i>Python
+                    </span>
+                    <span class="px-4 py-2 bg-gray-800/50 rounded-full text-sm text-gray-300 backdrop-blur-sm">
+                        <i class="fas fa-database mr-2"></i>SQL
+                    </span>
+                    <span class="px-4 py-2 bg-gray-800/50 rounded-full text-sm text-gray-300 backdrop-blur-sm">
+                        <i class="fab fa-docker mr-2"></i>Docker
+                    </span>
+                    <span class="px-4 py-2 bg-gray-800/50 rounded-full text-sm text-gray-300 backdrop-blur-sm">
+                        <i class="fab fa-aws mr-2"></i>AWS
+                    </span>
+                </div>
+            </div>
+        </div>
 
-            <footer class="footer">
-                <div class="footer_first">
-                    <p class="footer_title"> Jucester.tech | &#169; 2020
-                        copyright all right reserved </p>
-                    <div class="footer_social">
-                        <a href="#" class="footer_icon"><i class='bx
-                                bxl-facebook'></i></a>
-                        <a href="#" class="footer_icon"><i class='bx
-                                bxl-instagram'></i></a>
-                        <a href="#" class="footer_icon"><i class='bx
-                                bxl-twitter'></i></a>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white opacity-75 hover:opacity-100">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-gray-700 mb-6">
+                    Passionate backend engineer with expertise in building scalable microservices, 
+                    designing efficient databases, and implementing robust API solutions. 
+                    Focused on writing clean, maintainable code and following best practices in software development.
+                </p>
+                <div class="grid grid-cols-2 gap-6 mt-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold mb-2">Backend Focus</h3>
+                        <p class="text-gray-600">Specialized in server-side architecture and database optimization</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold mb-2">Problem Solver</h3>
+                        <p class="text-gray-600">Analytical thinker with strong debugging and optimization skills</p>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold mb-6 text-center">Languages</h3>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-python text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">Python</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-java text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">Java</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-golang text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">Go</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold mb-6 text-center">Databases</h3>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-database text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">PostgreSQL</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-leaf text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">MongoDB</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cube text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold mb-6 text-center">Technologies</h3>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-docker text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">Docker</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-dharmachakra text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">Kubernetes</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-aws text-4xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Microservices Platform</h3>
+                        <p class="text-gray-600 mb-4">Designed and implemented a scalable microservices architecture using Go and Docker</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Go</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Docker</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">gRPC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Data Pipeline System</h3>
+                        <p class="text-gray-600 mb-4">Built a robust data processing pipeline handling millions of records daily</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Apache Kafka</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">API Gateway</h3>
+                        <p class="text-gray-600 mb-4">Developed a high-performance API gateway with rate limiting and caching</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Java</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Spring Boot</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Work Experience</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="font-bold text-xl">Senior Backend Engineer</h3>
+                            <p class="text-gray-600">Tech Company Inc.</p>
+                        </div>
+                        <span class="text-gray-500">2020 - Present</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Led the development of microservices architecture</li>
+                        <li>Optimized database performance and query execution</li>
+                        <li>Implemented CI/CD pipelines and automated testing</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="font-bold text-xl">Backend Developer</h3>
+                            <p class="text-gray-600">Software Solutions Ltd.</p>
+                        </div>
+                        <span class="text-gray-500">2018 - 2020</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Developed RESTful APIs and backend services</li>
+                        <li>Managed database schemas and migrations</li>
+                        <li>Collaborated with frontend teams on API integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="max-w-xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <a href="mailto:your.email@example.com" class="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                            <i class="fas fa-envelope text-2xl text-gray-700 mr-3"></i>
+                            <span class="text-gray-700">Email Me</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                            <i class="fab fa-linkedin text-2xl text-gray-700 mr-3"></i>
+                            <span class="text-gray-700">LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                            <i class="fab fa-github text-2xl text-gray-700 mr-3"></i>
+                            <span class="text-gray-700">GitHub</span>
+                        </a>
+                        <a href="https://twitter.com/yourhandle" target="_blank" class="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                            <i class="fab fa-twitter text-2xl text-gray-700 mr-3"></i>
+                            <span class="text-gray-700">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </main>
-
-
-
-        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-        <!-- Scroll reveal -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- My js -->
-        <script src="src/js/main.js"></script>
-
-    </body>
-</html>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Backend Engineer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
